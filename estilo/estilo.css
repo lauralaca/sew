@@ -1,5 +1,29 @@
 /*   Laura Labrada Campos UO277510   */
+/*Especificidad (0,0,1)*/
 body {
     font-family: Verdana, Tahoma, sans-serif;
+    color:#333f63; /*Color del texto del body*/
+    background-color:#d7d4dd; /*Color del fondo del body*/
 
+}
+/*Especificidad (0,0,1)*/
+header{
+    font-family: Verdana, Tahoma, sans-serif;
+    color:#838bc2; /*Color del texto del header*/
+    background-color:#333f63; /*Color del fondo del header*/
+}
+/*Especificidad (0,0,2)*/
+nav a{
+    color: #d7d4dd; /*Color del texto de los enlaces a de nav, hereda color del fondo de header*/
+    background-color:#333f63; /*Color del fondo del header*/
+}
+nav a:visited { 
+    color: #beb1da;
+    background-color:#333f63; /*Color del fondo del header*/
+}
+
+/*Especificidad (0,0,1)*/
+h1{
+    color:  #ac94cc; /*Color del texto de h1, hereda color del fondo de header*/
+    background-color:#333f63; /*Color del fondo del header*/
 }
