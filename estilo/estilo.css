@@ -29,28 +29,99 @@ h1 a{
     color:  #d2b3db; /*Color del texto de h1*/
     background-color:#223144; /*Color del fondo de h1*/
     text-decoration: none; /*Quitar el subrayado del link*/
-    font-size: 1.75rem; /*Tamaño del texto de h1 en unidades relativas*/
+    font-size: 2em; /*Tamaño del texto de h1 en unidades relativas*/
 }
 
 /*Especificidad (0,0,1)*/
 h2{
     text-align: center; /*Alineación del texto de h2 centrada*/
-    font-size: 1.5rem; /*Tamaño del texto de h2 en unidades relativas*/
+    font-size: 1.75em; /*Tamaño del texto de h2 en unidades relativas*/
 }
 
 /*Especificidad (0,0,1)*/
 h3{
     
-    font-size: 1.25rem; /*Tamaño del texto de h3 en unidades relativas*/
+    font-size: 1.5em; /*Tamaño del texto de h3 en unidades relativas*/
 }
 
 /*Especificidad (0,0,1)*/
 h4{
-    
-    font-size: 1rem; /*Tamaño del texto de h4 en unidades relativas*/
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1em; /*Tamaño del texto de h4 en unidades relativas*/
 }
 
 /*Especificidad (0,1,2)*/
 body > p:first-of-type {
-    font-size: 0.925rem; /*Tamaño del texto de las migas de navegación en unidades relativas*/
+    font-size: 1em; /*Tamaño del texto de las migas de navegación en unidades relativas*/
 }
+
+/*Especificidad (0,1,2)*/
+li> a[href]{
+    color: #303757;/*Color del texto de los enlaces a de nav una vez visitados*/
+    background-color:#dedae4; /*Color del fondo del body*/
+}
+
+/*Especificidad (0,2,2)*/
+li> a[href]:visited{
+    color:#273a99; /*Color del texto de los enlaces a de nav una vez visitados*/
+    background-color:#dedae4; /*Color del fondo del body*/
+}
+
+/*Especificidad (0,0,1)*/
+ul { list-style-type: "★"; }
+
+/*Especificidad (0,0,2)*/
+ul ul{
+     list-style-type: "☆"; 
+}
+
+/*Especificidad (0,0,1)*/
+ol {list-style-type:upper-roman }
+
+/*Especificidad (0,0,1)*/
+dt{
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*Especificidad (0,0,2)*/
+dt::after{
+    content: ":";
+}
+
+/*Especificidad (0,0,1)*/
+dd{
+    font-weight: lighter;
+    font-style: italic; 
+    margin: 1em;
+    margin-bottom: 1em;
+}
+
+/*Especificidad (0,0,1)*/
+table {
+    margin: 1em;
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.1em solid #000000;
+    
+  }
+table > caption{
+    margin: 0.25em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+th{
+    background-color: #d2b3db;
+    border: 0.05em solid #000000;
+    font-size: 1.1  em;
+}
+td{
+    background-color: #e1cee7;
+    border: 0.1em solid #000000;
+    text-align: center;
+    font-size: 0.95em;
+}
+img { max-width: 100%; height: auto; }
+video { max-width: 100%; height: auto; }
