@@ -16,6 +16,7 @@ header{
 /*Especificidad (0,0,2)*/
 nav a{
     margin: 0.5em;
+    font-size: 1.125em;
     color: #dedae4; /*Color del texto de los enlaces a de nav*/
     background-color:#223144; /*Color del fondo de los enlaces a de nav*/
 }
