@@ -15,6 +15,7 @@ header{
 }
 /*Especificidad (0,0,2)*/
 nav a{
+    margin: 0.25em;
     color: #dedae4; /*Color del texto de los enlaces a de nav*/
     background-color:#223144; /*Color del fondo de los enlaces a de nav*/
 }
@@ -56,6 +57,10 @@ body > p:first-of-type {
     font-size: 1em; /*Tamaño del texto de las migas de navegación en unidades relativas*/
 }
 
+/*Especificidad (0,0,1)*/
+li{
+    margin-bottom: 0.25em;
+}
 /*Especificidad (0,1,2)*/
 li> a[href]{
     color: #303757;/*Color del texto de los enlaces a de nav una vez visitados*/
