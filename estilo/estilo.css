@@ -39,7 +39,7 @@ h1 a{
     color:  #d2b3db; /*Color del texto de h1*/
     background-color:#223144; /*Color del fondo de h1*/
     text-decoration: none; /*Quitar el subrayado del link*/
-    font-size: 1.75em; /*Tamaño del texto de h1 en unidades relativas*/
+    font-size: 1.25em; /*Tamaño del texto de h1 en unidades relativas*/
 }
 
 /*Especificidad (0,0,1)*/
