@@ -1,0 +1,23 @@
+/*   Laura Labrada Campos UO277510   */
+/*Especificidad (0,0,1)*/
+header {
+    display: flex;
+    flex-direction: row; /* Coloca h1 y nav en la misma fila */
+    justify-content: space-between; /* Distribuye h1 y nav con espacio entre ellos */
+    align-items: center; /* Alinea h1 y nav verticalmente en el centro */
+    padding: 0.5em; /* Añade un poco de espacio alrededor del contenido */
+}
+
+/*Especificidad (0,0,1)*/
+nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; /* Espacia uniformemente los elementos dentro del nav */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    padding: 0.125em; 
+}
+
+/*Especificidad (0,0,1)*/
+h1 {
+        padding: 0.125em; /* Añade un poco de espacio alrededor del h1 */
+}

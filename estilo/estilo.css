@@ -15,14 +15,22 @@ header{
 }
 /*Especificidad (0,0,2)*/
 nav a{
+    
     margin: 0.5em;
-    font-size: 1.125em;
+    font-size: 1.25em;
     color: #dedae4; /*Color del texto de los enlaces a de nav*/
     background-color:#223144; /*Color del fondo de los enlaces a de nav*/
 }
+
 /*Especificidad (0,1,2)*/
 nav a:visited { 
-    color: #B1B9E2;/*Color del texto de los enlaces a de nav una vez visitados*/
+    color: #C3CAE9;/*Color del texto de los enlaces a de nav una vez visitados*/
+    background-color:#223144; /*Color del fondo de los enlaces a de nav*/
+}
+
+/*Especificidad (0,1,2)*/
+nav a.active{
+    color: #F6B6EB; /*Color del texto del enlace  activo a de nav*/
     background-color:#223144; /*Color del fondo de los enlaces a de nav*/
 }
 
@@ -31,7 +39,7 @@ h1 a{
     color:  #d2b3db; /*Color del texto de h1*/
     background-color:#223144; /*Color del fondo de h1*/
     text-decoration: none; /*Quitar el subrayado del link*/
-    font-size: 2em; /*Tamaño del texto de h1 en unidades relativas*/
+    font-size: 1.75em; /*Tamaño del texto de h1 en unidades relativas*/
 }
 
 /*Especificidad (0,0,1)*/
@@ -105,7 +113,6 @@ dt::after{
 dd{
     font-weight: lighter;
     font-style: italic; 
-    margin: 1em;
     margin-bottom: 1em;
 }
 
@@ -113,8 +120,6 @@ dd{
 table {
     margin: 1em;
     table-layout: auto;
-    width: 100%;
-    border-collapse: collapse;
     border: 0.1em solid #000000;
     
   }
@@ -128,6 +133,7 @@ table > caption{
 
 /*Especificidad (0,0,1)*/
 th{
+    color:#223144; /*Color del texto del th*/
     background-color: #d2b3db;
     border: 0.05em solid #000000;
     font-size: 1.1em;
@@ -135,6 +141,7 @@ th{
 
 /*Especificidad (0,0,1)*/
 td{
+    color:#223144; /*Color del texto del td*/
     background-color: #e1cee7;
     border: 0.1em solid #000000;
     text-align: center;
