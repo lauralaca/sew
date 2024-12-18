@@ -1,0 +1,63 @@
+/*   Laura Labrada Campos UO277510   */
+/*Especificidad (0,0,1)*/
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    color:#223144; /*Color del texto del body*/
+    background-color:#dedae4; /*Color del fondo del body*/
+
+}
+/*Posible fondo body y enlaces: dedae4*/
+/*Especificidad (0,0,1)*/
+header{
+    font-family: Verdana, Tahoma, sans-serif;
+    color:#d2b3db; /*Color del texto del header*/
+    background-color:#223144; /*Color del fondo del header*/
+}
+/*Especificidad (0,0,2)*/
+nav a{
+    color: #dedae4; /*Color del texto de los enlaces a de nav*/
+    background-color:#223144; /*Color del fondo de los enlaces a de nav*/
+}
+/*Especificidad (0,1,2)*/
+nav a:visited { 
+    color: #B1B9E2;/*Color del texto de los enlaces a de nav una vez visitados*/
+    background-color:#223144; /*Color del fondo de los enlaces a de nav*/
+}
+
+/*Especificidad (0,0,2)*/
+h1 a{
+    color:  #d2b3db; /*Color del texto de h1*/
+    background-color:#223144; /*Color del fondo de h1*/
+    text-decoration: none; /*Quitar el subrayado del link*/
+    font-size: 1.75rem; /*Tamaño del texto de h1 en unidades relativas*/
+}
+
+/*Especificidad (0,0,1)*/
+h2{
+    text-align: center; /*Alineación del texto de h2 centrada*/
+    font-size: 1.5rem; /*Tamaño del texto de h2 en unidades relativas*/
+}
+
+/*Especificidad (0,0,1)*/
+h3{
+    
+    font-size: 1.25rem; /*Tamaño del texto de h3 en unidades relativas*/
+}
+
+/*Especificidad (0,0,1)*/
+h4{
+    
+    font-size: 1rem; /*Tamaño del texto de h4 en unidades relativas*/
+}
+
+/*Especificidad (0,1,2)*/
+body > p:first-of-type {
+    font-size: 0.925rem; /*Tamaño del texto de las migas de navegación en unidades relativas*/
+}
+
+
+/*Especificidad (0,1,1)*/
+main > section > div:first-of-type{
+    width: 50%;
+    height:50vw; 
+}

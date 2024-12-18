@@ -1,0 +1,22 @@
+/*   Laura Labrada Campos UO277510   */
+
+/* Especificidad (0,0,1) */
+section {    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr)); 
+  gap: 0.5em; 
+  padding: 1.25em; 
+}
+section > h3{
+  grid-column: 1/-1;
+}
+/* Especificidad (0,0,2) */
+section article {
+  background-color: #f4f4f4;
+  padding: 0.9375em; 
+  border: 0.0625em solid #ddd; 
+  border-radius: 0.3125em; 
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1); 
+}
+
+

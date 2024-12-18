@@ -1,0 +1,35 @@
+Acabar layout.css
+Lab6
+    -Cartas arreglar comentarios css
+    -Semaforo comentar bien css
+Comprobar todos archivos
+Lab7
+   
+    -Agenda css arreglar section title es otro cudarado arreglar hora
+Lab8
+    -API file css en la mierda
+    -API geolocalización arreglar tarea 6 headers tarea 7 mapa kml no funciona el addActionListener
+    -API HTML5 libre todo
+
+Lab9 - todo
+    -Semaforo tarea5 ranking
+    - fotos viajes
+Lab10 - todo
+    -cambio moneda
+    -libre
+
+tg solo dudas
+mapa dinamico estilos depende de cómo código
+div de mapa dinámico tiene div externo luego dentro varios
+si uso div directamente se afectan todos, solo primer div
+si zoom no hace nada es por modificar divs con w y h
+
+mapa geolocalizacion asincrona
+no usar class
+
+<code>
+            <?php
+                private $carrusel = new Carrusel("Quatar","Doha"); 
+                $carrusel.fotos();
+            ?>
+        </code>

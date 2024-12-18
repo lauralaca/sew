@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Laura Labrada Campos" />
+    <meta name ="description" content ="documento para utilizar en otros módulos de la asignatura" />
+    <meta name ="keywords" content ="calendario, f1, formula1" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <title>F1 Desktop - Calendario</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/agenda_grid.css">
+    <link rel="icon" href="multimedia/favicon.ico">
+    <script src="js/agenda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="incio">Inicio</a>
+            <a href="piloto.html" title="piloto">Piloto</a>
+            <a href="noticias.html" title="noticias">Noticias</a>
+            <a href="calendario.html" title="calendario">Calendario</a>
+            <a href="meteorologia.html" title="meteorología">Meteorología</a>
+            <a href="circuito.html" title="circuito">Circuito</a>
+            <a href="viajes.php" title="viajes">Viajes</a>
+            <a href="juegos.html" title="juegos">Juegos</a>
+        </nav>
+    </header>
+    <p>Estás en: Inicio > Calendario</p>
+    <h2>Calendario</h2>
+    <button>Solicitar carreras</button>
+  
+    <script>
+        $("button").before("<section><h3>Horario:</h3> </section>");
+        let boton = document.querySelectorAll("button")[0]; 
+        var agenda = new Agenda("http://ergast.com/api/f1/current.json");
+        boton.setAttribute("onclick","agenda.getCarreras()"); 
+        
+    </script>
+</body>
+</html>

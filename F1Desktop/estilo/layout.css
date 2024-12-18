@@ -1,0 +1,81 @@
+/*   Laura Labrada Campos UO277510   */
+
+@media(max-width: 465px){
+    header {
+        display: flex;
+        flex-direction: column; /* Coloca h1 y nav en la misma fila */
+        justify-content: space-between; /* Distribuye h1 y nav con espacio entre ellos */
+        align-items: center; /* Alinea h1 y nav verticalmente en el centro */
+        padding: 0.5em; /* Añade un poco de espacio alrededor del contenido */
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; /* Espacia uniformemente los elementos dentro del nav */
+        align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+        padding: 0.125em; 
+    }
+    body > p:first-of-type {
+        display: none;
+    }
+
+    table {
+        margin-left: 0.03em;
+        width: 100%; /* Asegura que la tabla ocupe el 100% del ancho disponible */
+        table-layout: fixed; /* Fija el layout de la tabla */
+    }
+    th, td {
+        word-wrap: break-word; /* Permite que el contenido de las celdas se ajuste */
+        white-space: normal; /* Permite que el contenido se ajuste en varias líneas */
+    }
+}
+
+@media(min-width: 465px) and (max-width: 799px){
+        /*Especificidad (0,0,1)*/
+    header {
+        display: flex;
+        flex-direction: column; /* Coloca h1 y nav en la misma fila */
+        justify-content: space-between; /* Distribuye h1 y nav con espacio entre ellos */
+        align-items: center; /* Alinea h1 y nav verticalmente en el centro */
+        padding: 0.5em; /* Añade un poco de espacio alrededor del contenido */
+    }
+    /*Especificidad (0,0,1)*/
+    nav {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; /* Espacia uniformemente los elementos dentro del nav */
+        align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+        padding: 0.125em; 
+    }
+        
+
+}
+
+@media(min-width: 800px){
+    
+        /*Especificidad (0,0,1)*/
+        header {
+            display: flex;
+            flex-direction: row; /* Coloca h1 y nav en la misma fila */
+            justify-content: space-between; /* Distribuye h1 y nav con espacio entre ellos */
+            align-items: center; /* Alinea h1 y nav verticalmente en el centro */
+            padding: 0.5em; /* Añade un poco de espacio alrededor del contenido */
+        }
+        /*Especificidad (0,0,1)*/
+        nav {
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between; /* Espacia uniformemente los elementos dentro del nav */
+            align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+            padding: 0.125em; 
+        }
+        
+
+}
+
+
+/*Especificidad (0,0,1)*/
+h1 {
+        padding: 0.125em; /* Añade un poco de espacio alrededor del h1 */
+}
